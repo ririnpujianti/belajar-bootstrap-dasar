@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBox Construction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        .menu {
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            background: url('perusahaan.png') no-repeat center center/cover;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+        }
+
+        .project-card {
+            background-color: rgba(0, 102, 204, 0.9);
+            padding: 20px;
+            display: inline-block;
+            text-align: left;
+            border-radius: 8px;
+            width: 400px;
+            margin-top: 20px;
+        }
+
+        .project-card h2 {
+            font-size: 1.5rem;
+        }
+
+        .project-card p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .slider-controls button {
+            background-color: #fff;
+            border: none;
+            color: #0066cc;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .reputation {
+            padding: 60px 0;
+            background-color: #f8f8f8;
+        }
+
+        .reputation h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+        }
+
+        .reputation-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .reputation-item {
+            background-color: #fff;
+            padding: 30px;
+            width: 32%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .about-us {
+            padding: px 0;
+            background-color: #fdfeff;
+            /* Warna latar biru */
+            color: #fff;
+            /* Warna teks putih */
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-image img {
+            width: 50%;
+            border-radius: 8px;
+        }
+
+        .about-text {
+            background-color: #005bb5;
+            /* Tambahkan warna background */
+            padding: 20px;
+            border-radius: 8px;
+            /* Tambahkan border-radius */
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .about-text a {
+            text-decoration: none;
+            background-color: #fff;
+            color: #0066cc;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">TheBox</div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <h1>Building things is our mission.</h1>
+                <div class="project-card">
+                    <h2>Featured Project</h2>
+                    <p>The National University of Architecture</p>
+                    <div class="slider-controls">
+                        <button>Prev</button>
+                        <button>Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="reputation">
+        <div class="container">
+            <h2>Our Reputation</h2>
+            <div class="reputation-grid">
+                <div class="reputation-item">
+                    <h3>Best Services</h3>
+                    <p>High quality construction services for residential and commercial clients.</p>
+                </div>
+                <div class="reputation-item">
+                    <h3>Best Teams</h3>
+                    <p>Our team is composed of highly skilled professionals ready to serve you.</p>
+                </div>
+                <div class="reputation-item">
+                    <h3>Best Designs</h3>
+                    <p>We provide modern and aesthetic designs tailored to meet client needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="ceo.png" alt="CEO">
+                </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>For more than 30 years we have been delivering world-class construction projects.</p>
+                    <p>We are a market leader in bringing new life to buildings through innovation and reliability.</p>
+                    <a href="#">See our history</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
